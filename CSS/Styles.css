@@ -21,7 +21,7 @@ h5{
 }
 
 .Encabezado {
-       background-color: orange;
+       background-color: rgba(224, 209, 204, 0.479);
        height: 200px;
        width: 100%;  
 }
