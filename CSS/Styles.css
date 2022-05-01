@@ -26,7 +26,11 @@ h5{
 .Encabezado {
        background-color: black;
        height: 200px;
-       width: 100%;  
+       width: 100%;
+       display: flex;
+       flex-direction: column      ;
+       justify-content: space-between;
+       text-align: center;  
 }
 
 nav {
@@ -76,7 +80,9 @@ main{
 
 }
 .TitIndex{
-       font-size: 50px;
+       font-size: 30px;
+       background-color: orange;
+       text-align: center;
 }
 span{
        color: red;
