@@ -1,4 +1,4 @@
-/* RECETEO */
+/* RESCET */
 *{
        margin: 0;
        padding: 0;
@@ -83,19 +83,9 @@ span{
 }
 /* -----------RESEñAS----------- */
 
-.flex{
-       flex-direction: wrap;
-       padding: 10px;
-       border: 2px solid beige;
-}
-
-.flex div{
-       background-color: #fff;
-       width: 50px;
-       text-align: center;
-       line-height: 75px;
-       font-size: 30px;
-       border: 2px solid black;
+.card-img-top{
+       margin-right: 80em;
+       max-width: 60em;
 }
 
 
