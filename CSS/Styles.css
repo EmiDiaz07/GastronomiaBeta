@@ -208,15 +208,21 @@ footer{
               font-size: 30px;
        }
 }
+@media (max-width:425px){
+       .Encabezado{
+              height: auto;
+       }       
+}
 
-/* Inicio solo de fotos */
-@media (max-width: 600px) {
-.contenedor-imagenes{
-              display: flex;
+@media (max-width:320px){
+       ul{
+              font-size: 13px;
+       }
+       .Encabezado{  
+              height: auto;
        }
 }
 
-/*  */
 /* Reccetas */
 @media (max-width: 1347px) {
        .recetas{
@@ -286,10 +292,8 @@ footer{
 }
 }
 
-/* ------CONTACTO MEDIA--------------- */
+/*----------CONTACTO MEDIA--------------- */
 
-/* @media (max-width:764px) {
+@media (max-width:764px) {
        .contacto1{
        }
-}
- */
