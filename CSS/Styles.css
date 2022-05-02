@@ -292,8 +292,16 @@ footer{
 }
 }
 
-/*----------CONTACTO MEDIA--------------- */
+/*------------MEDIA FOOTER--------------- */
 
-@media (max-width:764px) {
-       .contacto1{
+@media (max-width:425px){
+       .Autor{
+              font-size: 15px;
+              text-align: left;
        }
+       .footlog{
+              font-size: 20px;
+              text-align: end;
+              padding-top: 6.5%;
+       }
+}
