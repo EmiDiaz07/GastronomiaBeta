@@ -87,6 +87,28 @@ main{
 span{
     color: red;
 }
+
+
+$colores:
+    red,
+    blue,
+    green,
+    yellow, 
+;
+
+@each $color in $colores {
+    .maps-#{$colores} {
+    background-color: $color;
+    color: $color;
+    background-color: $color;
+    font-size: 60px;
+    border: 2px solid;
+    height: 200px;
+    width: 600px;
+
+
+}
+    
 /* -----------RESEñAS----------- */
 
 .card-img-top{
