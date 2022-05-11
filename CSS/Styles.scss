@@ -1,189 +1,182 @@
 /* RESCET */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-/*        font-family: 'Courier New', Courier, monospace */;
-}
-/* TITULO */
-.titulo{
-    font-size : 90px;
-    text-align: center;
-    color: orange;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*        font-family: 'Courier New', Courier, monospace */
 }
 
-h5{ 
-    font-size: 25px; 
-    text-align: center; 
-    color: orange;     
+/* TITULO */
+.titulo {
+  font-size: 90px;
+  text-align: center;
+  color: orange;
 }
+
+h5 {
+  font-size: 25px;
+  text-align: center;
+  color: orange;
+}
+
 /* ----GENERAL ENCABEZLADO------ */
 .lista {
-    font-size: 30px;
-    padding-top: 4px;
+  font-size: 30px;
+  padding-top: 4px;
 }
 
 .Encabezado {
-    background-color: black;
-    height: 200px;
-    width: 100%;
-    display: flex;
-    flex-direction: column      ;
-    justify-content: space-between;
-    text-align: center;  
+  background-color: black;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
 }
 
 nav {
-    text-align: center;
-}
-.LiEnca{
-    display: inline-block;
-}
-li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+  text-align: center;
 }
 
-nav ul li a:hover{
-    color: orange;
+.LiEnca {
+  display: inline-block;
+}
+
+li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+nav ul li a:hover {
+  color: orange;
 }
 
 /* ------FONDOS GENERALES----- */
-main{
-    height: auto;
-    width: 100%;
-    background-image: url(../Images/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    
+main {
+  height: auto;
+  width: 100%;
+  background-image: url(../Images/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-
 
 /* -----------INICIO/HOME--------------- */
-.Fuimos{
-    font-size: 40px;
-    margin-block-end: 5px;
+.Fuimos {
+  font-size: 40px;
+  margin-block-end: 5px;
 }
+
 /* .Section-two{
-    height: 100%;
-    width: 100%;
-} */
-
-.item{
-    display: flex;
-    flex-direction: column;
-    height: 120px;
-    width: 120px;
-    color:rgb(166, 50, 50);
-    font-size: 5em;
-
-}
-.TitIndex{
-    font-size: 30px;
-    background-color: orange;
-    text-align: center;
-}
-span{
-    color: red;
+      height: 100%;
+      width: 100%;
+  } */
+.item {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  width: 120px;
+  color: rgb(166, 50, 50);
+  font-size: 5em;
 }
 
+.TitIndex {
+  font-size: 30px;
+  background-color: orange;
+  text-align: center;
+}
 
-$colores:
-    red,
-    blue,
-    green,
-    yellow, 
-;
+span {
+  color: red;
+}
 
-@each $color in $colores {
-    .maps-#{$colores} {
+
+$colores: (
+ c1: red, 
+ c2: blue,
+ c3: green,
+ c4: yellow,
+  );
+
+@each $c , $color in $colores {
+  .color-#{$c} {
     background-color: $color;
-    color: $color;
-    background-color: $color;
+    color: black;
     font-size: 60px;
     border: 2px solid;
-    height: 200px;
-    width: 600px;
-
-
+    height: 150px;
+    width: 950px;
+  }
 }
-    
-/* -----------RESEñAS----------- */
-
-.card-img-top{
+  /* -----------RESEñAS----------- */
+  .card-img-top {
     margin-right: 80em;
     max-width: 60em;
-}
+  }
 
-
-
-
-/* -------Recetas-------- */
-h2{
+  /* -------Recetas-------- */
+  h2 {
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: orange;
-    color:#fff;
+    color: #fff;
     text-align: center;
     text-transform: capitalize;
-}
-.recetas{
+  }
+
+  .recetas {
     background-color: rgba(255, 255, 255, 0.649);
     height: 400px;
     width: 100%;
     font-size: 40px;
+  }
 
-} 
-
-/* ------------------------------NOSOTROS----------------------------------- */
-
-
-
-
-
-/*----Formulario de contacto en contacto.html----- */
-
-.contacto1{
+  /*----Formulario de contacto en contacto.html----- */
+  .contacto1 {
     height: auto;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+  }
 
-}
-.contacto1a{
+  .contacto1a {
     grid-column: 2/4;
     grid-row: 1/4;
+  }
 
-}
-.cuadro{
+  .cuadro {
     width: 53%;
     background-color: rgba(255, 255, 255, 0.605);
     text-align: justify;
     line-height: 30px;
     margin-left: auto;
     font-size: 20px;
-}
-label{
+  }
+
+  label {
     margin-left: 4px;
-}
-input{
+  }
+
+  input {
     margin-left: 10px;
-}
-textarea{
+  }
+
+  textarea {
     margin-left: 15px;
-}
-.cuadro_{
+  }
+
+  .cuadro_ {
     width: 53%;
     background-color: rgba(255, 255, 255, 0.605);
     line-height: 30px;
     margin-left: auto;
     font-size: 20px;
-}
+  }
 
-/* -----FOOTER GENERAL---- */
-footer{
+  /* -----FOOTER GENERAL---- */
+  footer {
     height: 120px;
     width: 100%;
     background-color: black;
@@ -192,141 +185,138 @@ footer{
     text-align: right;
     display: inline-block;
     padding-top: 10px;
-}
-.Autor{
+  }
+
+  .Autor {
     font-size: 20px;
     float: left;
-    display: inline-block;
     padding-top: 30px;
-}
+  }
 
-
-
-
-/* ---------MEDIA---------- */
-
-/* -------------------Titulo y Encabezado------------- */
-@media (max-width:425px) {
-    .titulo{
-           font-size : 70px;
-           text-align: center;
+  /* ---------MEDIA---------- */
+  /* -------------------Titulo y Encabezado------------- */
+  @media (max-width: 425px) {
+    .titulo {
+      font-size: 70px;
+      text-align: center;
     }
-}
+  }
 
-@media (max-width:425px) {
-    h5{
-           font-size: 25px;
-           text-align: center;
+  @media (max-width: 425px) {
+    h5 {
+      font-size: 25px;
+      text-align: center;
     }
-    
-}
-@media (max-width:375px) {
-    .titulo{
-           font-size : 50px;
-           text-align: center;
-    }
-}
+  }
 
-
-@media (max-width:690px){
-    .LiEnca{
-           font-size: 30px;
+  @media (max-width: 375px) {
+    .titulo {
+      font-size: 50px;
+      text-align: center;
     }
-}
-@media (max-width:425px){
-    .Encabezado{
-           height: auto;
-    }       
-}
+  }
 
-@media (max-width:320px){
-    ul{
-           font-size: 13px;
+  @media (max-width: 690px) {
+    .LiEnca {
+      font-size: 30px;
     }
-    .Encabezado{  
-           height: auto;
-    }
-}
+  }
 
-/* Reccetas */
-@media (max-width: 1347px) {
-    .recetas{
-           background-color: rgba(255, 255, 255, 0.649);
-           height: 550px;
-           width: 100%;
-           font-size: 40px;
-           }
+  @media (max-width: 425px) {
+    .Encabezado {
+      height: auto;
+    }
+  }
+
+  @media (max-width: 320px) {
+    ul {
+      font-size: 13px;
     }
 
-@media (max-width: 1250px) {
-.recetas{
-    background-color: rgba(255, 255, 255, 0.649);
-    height: 450px;
-    width: 100%;
-    font-size: 40px;
+    .Encabezado {
+      height: auto;
     }
-}
+  }
 
-@media (max-width: 1024px) {
-    .recetas{
-           background-color: rgba(255, 255, 255, 0.649);
-           height: 470px;
-           width: 100%;
-           font-size: 40px;
-           }
+  /* Reccetas */
+  @media (max-width: 1347px) {
+    .recetas {
+      background-color: rgba(255, 255, 255, 0.649);
+      height: 550px;
+      width: 100%;
+      font-size: 40px;
     }
+  }
 
-@media (max-width:768px) {
-    .recetas{
-           background-color: orange;
-           height: 510px;
-           width: 100%;
-           font-size: 30px;
-}
-}
+  @media (max-width: 1250px) {
+    .recetas {
+      background-color: rgba(255, 255, 255, 0.649);
+      height: 450px;
+      width: 100%;
+      font-size: 40px;
+    }
+  }
 
-@media (max-width:720px) {
-    .recetas{
-    background-color: rgba(255, 255, 255, 0.649);
-    height: 510px;
-    width: 100%;
+  @media (max-width: 1024px) {
+    .recetas {
+      background-color: rgba(255, 255, 255, 0.649);
+      height: 470px;
+      width: 100%;
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .recetas {
+      background-color: orange;
+      height: 510px;
+      width: 100%;
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .recetas {
+      background-color: rgba(255, 255, 255, 0.649);
+      height: 510px;
+      width: 100%;
+      font-size: 30px;
+    }
+  }
+
+  .Preparacio {
     font-size: 30px;
+    text-align: justify;
+  }
+
+  @media (max-width: 460px) {
+    .recetas {
+      background-color: rgba(255, 255, 255, 0.649);
+      height: 810px;
+      width: 100%;
+      font-size: 30px;
     }
-}
-    .Preparacio{
-           font-size: 30px;
-           text-align: justify;
+  }
+
+  @media (max-width: 330px) {
+    .recetas {
+      background-color: rgba(255, 255, 255, 0.649);
+      height: 850px;
+      width: 100%;
+      font-size: 30px;
+    }
+  }
+
+  /*------------MEDIA FOOTER--------------- */
+  @media (max-width: 425px) {
+    .Autor {
+      font-size: 15px;
+      text-align: left;
     }
 
-
-@media (max-width:460px) {
-    .recetas{
-           background-color: rgba(255, 255, 255, 0.649);
-           height: 810px;
-           width: 100%;
-           font-size: 30px;
+    .footlog {
+      font-size: 20px;
+      text-align: end;
+      padding-top: 6.5%;
     }
-}
-
-@media (max-width:330px) {
-    .recetas{
-           background-color: rgba(255, 255, 255, 0.649);
-           height: 850px;
-           width: 100%;
-           font-size: 30px;
-}
-}
-
-/*------------MEDIA FOOTER--------------- */
-
-@media (max-width:425px){
-    .Autor{
-           font-size: 15px;
-           text-align: left;
-    }
-    .footlog{
-           font-size: 20px;
-           text-align: end;
-           padding-top: 6.5%;
-    }
-}
+  }
