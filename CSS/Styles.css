@@ -78,10 +78,6 @@ main {
           margin-block-end: 5px;
 }
 
-/* .Section-two{
-      height: 100%;
-      width: 100%;
-  } */
 .item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,68 +98,12 @@ main {
   text-align: center;
 }
 
-span {
-  color: red;
-}
-
-.color-c1 {
-  background-color: red;
-  color: black;
-  font-size: 60px;
-  border: 2px solid;
-  height: 150px;
-  width: 950px;
-}
-
-.color-c2 {
-  background-color: blue;
-  color: black;
-  font-size: 60px;
-  border: 2px solid;
-  height: 150px;
-  width: 950px;
-}
-
-.color-c3 {
-  background-color: green;
-  color: black;
-  font-size: 60px;
-  border: 2px solid;
-  height: 150px;
-  width: 950px;
-}
-
-.color-c4 {
-  background-color: yellow;
-  color: black;
-  font-size: 60px;
-  border: 2px solid;
-  height: 150px;
-  width: 950px;
-}
-
 /* -----------RESEñAS----------- */
 .card-img-top {
   margin-right: 80em;
   max-width: 60em;
 }
 
-/* -------Recetas-------- */
-h2 {
-  font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: orange;
-  color: #fff;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.recetas {
-  background-color: rgba(255, 255, 255, 0.649);
-  height: 400px;
-  width: 100%;
-  font-size: 40px;
-}
 
 /*----Formulario de contacto en contacto.html----- */
 .contacto1 {

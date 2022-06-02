@@ -87,28 +87,6 @@ main {
   text-align: center;
 }
 
-span {
-  color: red;
-}
-
-
-$colores: (
- c1: red, 
- c2: blue,
- c3: green,
- c4: yellow,
-  );
-
-@each $c , $color in $colores {
-  .color-#{$c} {
-    background-color: $color;
-    color: black;
-    font-size: 60px;
-    border: 2px solid;
-    height: 150px;
-    width: 950px;
-  }
-}
   /* -----------RESEñAS----------- */
   .card-img-top {
     margin-right: 80em;
@@ -116,7 +94,7 @@ $colores: (
   }
 
   /* -------Recetas-------- */
-  h2 {
+  h4 {
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: orange;
